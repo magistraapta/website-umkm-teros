@@ -19,3 +19,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root {
+  --font-plus-jakarta-sans: '';
+  --font-jetbrains-mono: '';
+}
+
+/* To use the fonts, you can do something like: */
+.some-text {
+  font-family: var(--font-plus-jakarta-sans);
+}
+
+.code-text {
+  font-family: var(--font-jetbrains-mono);
+}
