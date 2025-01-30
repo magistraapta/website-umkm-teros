@@ -47,7 +47,7 @@ function Cover() {
       </div>
       <div className="relative w-full h-64 md:h-80 lg:h-96">
         <Image
-          src={'/images/IMG_2019.jpg'}
+          src={'/images/IMG_2019.JPG'}
           layout="fill"
           alt="image"
           className="rounded-2xl object-cover"
@@ -66,7 +66,7 @@ function Sosialisasi() {
         </h1>
         <div className="relative w-full h-64 md:h-80 lg:h-96 mt-6">
           <Image
-            src={'/images/IMG_1950.jpg'}
+            src={'/images/IMG_1950.JPG'}
             layout="fill"
             alt="image"
             className="rounded-2xl object-cover object-bottom"
