@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Umkm({ image_url, name, lokasi, no_hp }) {
+export default function Umkm({ image_url, name, produk, no_hp }) {
     return (
       <div className="mt-5 w-full p-4">
         <div className="relative w-full h-[300px]"> {/* Adjust height as needed */}
@@ -14,9 +14,9 @@ export default function Umkm({ image_url, name, lokasi, no_hp }) {
         </div>
         <div className="mt-3">
           <p className="text-base sm:text-2xl font-semibold">{name}</p>
-          <p className="text-[10px] sm:text-base">Lokasi: {lokasi}</p>
+          <p className="text-[10px] sm:text-base">Produk: {produk}</p>
         </div>
-        <div className="mt-3">
+        <div className="mt-5">
           <a
             href={`https://wa.me/${no_hp}`}
             className="bg-green-500 text-white px-2 sm:px-4 py-2 text-[10px] sm:text-base rounded-lg hover:bg-green-600 mt-6"
