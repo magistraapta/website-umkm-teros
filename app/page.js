@@ -10,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Cover />
       <Sosialisasi />
+      <Branding/>
 
       <div className="mt-6 flex justify-center px-4">
         <div className="w-full max-w-3xl">
@@ -26,7 +27,7 @@ export default function Home() {
             key={index}
             image_url={umkm.image_url}
             name={umkm.nama}
-            lokasi={umkm.lokasi}
+            produk={umkm.produk}
             no_hp={umkm.no_hp}
           />
         ))}
@@ -40,14 +41,14 @@ function Cover() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center px-4 md:px-8 lg:px-16 mt-10">
       <div className="text-center md:text-left">
-        <h1 className="text-[20px] sm:text-[48px] md:text-[40px] font-extrabold">Pengembangan Kewirausahaan Melalui Pelatihan dan Pendampingan Digital Marketing di Desa Teros, Kecamatan Labuhan Haji, Lombok Timur</h1>
+        <h1 className="text-[16px] sm:text-[20px] md:text-[32px] font-extrabold">Pengembangan Kewirausahaan Melalui Pelatihan dan Pendampingan Digital Marketing di Desa Teros, Kecamatan Labuhan Haji, Lombok Timur.</h1>
         <p className="text-[10px] sm:text-base text-gray-500 mt-2">
           Mahasiswa KKN PMD Universitas Mataram bekerja sama dengan UMKM di Desa Teros dalam melakukan transformasi digital pada setiap usaha UMKM dengan melakukan pengenalan terkait digital marketing dan re-branding.
         </p>
       </div>
       <div className="relative w-full h-64 md:h-80 lg:h-96">
         <Image
-          src={'/images/IMG_2019.JPG'}
+          src={'/images/IMG_1504.JPG'}
           layout="fill"
           alt="image"
           className="rounded-2xl object-cover"
@@ -84,8 +85,25 @@ function Sosialisasi() {
 
 function Branding() {
   return (
-    <div>
+    <div className="bg-gray-100 w-full py-10 px-4 md:px-8 lg:px-16 flex flex-col items-center">
+      <div className="max-w-4xl text-center">
+        <h1 className="text-[24px] sm:text-[48px] md:text-5xl font-extrabold">
+          Tranfsormasi Branding Bagi Para Pelaku UMKM di Desa Teros
+        </h1>
+        <div className="relative w-full h-64 md:h-80 lg:h-96 mt-6">
+          <Image
+            src={'/images/IMG_2084.JPG'}
+            layout="fill"
+            alt="image"
+            className="rounded-2xl object-cover object-top"
+          />
+        </div>
 
+        <div className="mt-6">
+          <p>Kelompok mahasiswa Kuliah Kerja Nyata Pemberdayaan Masyarakat Desa (KKN PMD) Universitas Mataram (Unram) di Desa Teros, Kecamatan Labuhan Haji, Kabupaten Lombok Timur menggelar kegiatan tranformasi branding usaha Aida Mandiri, Kamis, 23 Januari 2025.</p>
+          <a href="https://ntbsatu.com/2025/01/31/sinergi-mahasiwa-kkn-pmd-unram-dan-pelaku-umkm-desa-teros-bangun-ekonomi-lokal.html" className=" underline">Baca Selengkapnya</a>
+        </div>
+      </div>
     </div>
   )
 }
