@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
 
       </head>
       <body
-        className={`${jakartaSans.className} antialiased`}
+        className={`${jakartaSans.className} antialiased bg-white`}
       >
         {children}
       </body>
