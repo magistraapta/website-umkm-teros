@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="container mx-auto px-6 flex flex-col sm:flex-row justify-between items-center">
             {/* Left section */}
             <div>
-              <p className="text-[10px] sm:text-sm">© {currentYear} KKN PMD Universitas Mataram.</p>
+              <p className="text-[10px] sm:text-sm">© {currentYear} KKN PMD Universitas Mataram Desa Teros.</p>
             </div>
 
             {/* Right section */}
